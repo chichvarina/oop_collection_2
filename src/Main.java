@@ -25,9 +25,6 @@ public class Main {
         productSet2.add(potato);
         System.out.println("Коллекция продуктов 2 "+Arrays.toString(productSet2.toArray()));
 
-        Recipe r1 = new Recipe("Рецепт1", productSet1 );
-        Recipe r2 = new Recipe("Рецепт2", productSet2 );
-
         Set<Recipe> recipeSet = new HashSet<>();
         addRecipe(recipeSet,  new Recipe("Рецепт1", productSet1));
         addRecipe(recipeSet, new Recipe("Рецепт2", productSet1 ));
@@ -96,7 +93,6 @@ public class Main {
         System.out.println("Паспорт с номером "+numberPassport+
                 " принадлежит "+passport.getSurname()+" "+passport.getName()+" "+passport.getPatronymic()+
                 " "+passport.getBirthDate()+" года рождения");
-
 
     }
 
